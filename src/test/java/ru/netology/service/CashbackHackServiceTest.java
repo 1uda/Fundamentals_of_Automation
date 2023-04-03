@@ -17,7 +17,7 @@ public class CashbackHackServiceTest {
     @Test
     public void testLimitValue() {
         int purchase = 1000;
-        int expected = 1000;
+        int expected = 0;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(purchase);
         assertEquals(actual, expected);
